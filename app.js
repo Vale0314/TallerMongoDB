@@ -19,7 +19,6 @@ async function crearPropiedad(nuevaPropiedad){
         await client.close()
     }
 }
-for (let i=0; i<100; i++){
 crearPropiedad([
     {
         "supplier":faker.company.name(), //Sting
@@ -28,69 +27,82 @@ crearPropiedad([
         "lastName":faker.person.lastName(), // String
         "amount":faker.number.int(), //Int
         "price":faker.number.int(), //Int
-    }, {
-        "supplier":faker.company.name(), //Sting
-        "iva":faker.number.float(), //Double
-        "firstName":faker.person.firstName(), // String
-        "lastName":faker.person.lastName(), // String
-        "amount":faker.number.int(), //Int
-        "price":faker.number.int(), //Int
-    }, {
-        "supplier":faker.company.name(), //Sting
-        "iva":faker.number.float(), //Double
-        "firstName":faker.person.firstName(), // String
-        "lastName":faker.person.lastName(), // String
-        "amount":faker.number.int(), //Int
-        "price":faker.number.int(), //Int
-    }, {
-        "supplier":faker.company.name(), //Sting
-        "iva":faker.number.float(), //Double
-        "firstName":faker.person.firstName(), // String
-        "lastName":faker.person.lastName(), // String
-        "amount":faker.number.int(), //Int
-        "price":faker.number.int(), //Int
-    }, {
-        "supplier":faker.company.name(), //Sting
-        "iva":faker.number.float(), //Double
-        "firstName":faker.person.firstName(), // String
-        "lastName":faker.person.lastName(), // String
-        "amount":faker.number.int(), //Int
-        "price":faker.number.int(), //Int
-    }, {
-        "supplier":faker.company.name(), //Sting
-        "iva":faker.number.float(), //Double
-        "firstName":faker.person.firstName(), // String
-        "lastName":faker.person.lastName(), // String
-        "amount":faker.number.int(), //Int
-        "price":faker.number.int(), //Int
-    }, {
-        "supplier":faker.company.name(), //Sting
-        "iva":faker.number.float(), //Double
-        "firstName":faker.person.firstName(), // String
-        "lastName":faker.person.lastName(), // String
-        "amount":faker.number.int(), //Int
-        "price":faker.number.int(), //Int
-    }, {
-        "supplier":faker.company.name(), //Sting
-        "iva":faker.number.float(), //Double
-        "firstName":faker.person.firstName(), // String
-        "lastName":faker.person.lastName(), // String
-        "amount":faker.number.int(), //Int
-        "price":faker.number.int(), //Int
-    }, {
-        "supplier":faker.company.name(), //Sting
-        "iva":faker.number.float(), //Double
-        "firstName":faker.person.firstName(), // String
-        "lastName":faker.person.lastName(), // String
-        "amount":faker.number.int(), //Int
-        "price":faker.number.int(), //Int
-    }, {
-        "supplier":faker.company.name(), //Sting
-        "iva":faker.number.float(), //Double
-        "firstName":faker.person.firstName(), // String
-        "lastName":faker.person.lastName(), // String
-        "amount":faker.number.int(), //Int
-        "price":faker.number.int(), //Int
+        "Productos":["Cuaderno", "Lapiz", "Libro", "Colores"]
     }
+
 ])
-}
+// for (let i=0; i<100; i++){
+// crearPropiedad([
+//     {
+//         "supplier":faker.company.name(), //Sting
+//         "iva":faker.number.float(), //Double
+//         "firstName":faker.person.firstName(), // String
+//         "lastName":faker.person.lastName(), // String
+//         "amount":faker.number.int(), //Int
+//         "price":faker.number.int(), //Int
+//     }, {
+//         "supplier":faker.company.name(), //Sting
+//         "iva":faker.number.float(), //Double
+//         "firstName":faker.person.firstName(), // String
+//         "lastName":faker.person.lastName(), // String
+//         "amount":faker.number.int(), //Int
+//         "price":faker.number.int(), //Int
+//     }, {
+//         "supplier":faker.company.name(), //Sting
+//         "iva":faker.number.float(), //Double
+//         "firstName":faker.person.firstName(), // String
+//         "lastName":faker.person.lastName(), // String
+//         "amount":faker.number.int(), //Int
+//         "price":faker.number.int(), //Int
+//     }, {
+//         "supplier":faker.company.name(), //Sting
+//         "iva":faker.number.float(), //Double
+//         "firstName":faker.person.firstName(), // String
+//         "lastName":faker.person.lastName(), // String
+//         "amount":faker.number.int(), //Int
+//         "price":faker.number.int(), //Int
+//     }, {
+//         "supplier":faker.company.name(), //Sting
+//         "iva":faker.number.float(), //Double
+//         "firstName":faker.person.firstName(), // String
+//         "lastName":faker.person.lastName(), // String
+//         "amount":faker.number.int(), //Int
+//         "price":faker.number.int(), //Int
+//     }, {
+//         "supplier":faker.company.name(), //Sting
+//         "iva":faker.number.float(), //Double
+//         "firstName":faker.person.firstName(), // String
+//         "lastName":faker.person.lastName(), // String
+//         "amount":faker.number.int(), //Int
+//         "price":faker.number.int(), //Int
+//     }, {
+//         "supplier":faker.company.name(), //Sting
+//         "iva":faker.number.float(), //Double
+//         "firstName":faker.person.firstName(), // String
+//         "lastName":faker.person.lastName(), // String
+//         "amount":faker.number.int(), //Int
+//         "price":faker.number.int(), //Int
+//     }, {
+//         "supplier":faker.company.name(), //Sting
+//         "iva":faker.number.float(), //Double
+//         "firstName":faker.person.firstName(), // String
+//         "lastName":faker.person.lastName(), // String
+//         "amount":faker.number.int(), //Int
+//         "price":faker.number.int(), //Int
+//     }, {
+//         "supplier":faker.company.name(), //Sting
+//         "iva":faker.number.float(), //Double
+//         "firstName":faker.person.firstName(), // String
+//         "lastName":faker.person.lastName(), // String
+//         "amount":faker.number.int(), //Int
+//         "price":faker.number.int(), //Int
+//     }, {
+//         "supplier":faker.company.name(), //Sting
+//         "iva":faker.number.float(), //Double
+//         "firstName":faker.person.firstName(), // String
+//         "lastName":faker.person.lastName(), // String
+//         "amount":faker.number.int(), //Int
+//         "price":faker.number.int(), //Int
+//     }
+// ])
+// }

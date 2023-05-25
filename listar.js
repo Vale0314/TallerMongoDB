@@ -3,28 +3,28 @@ const { faker } = require('@faker-js/faker');
 
 const uri='mongodb+srv://valeria:admin@cluster0.wcriixv.mongodb.net/?retryWrites=true&w=majority'
 
-// //Listar un documento
+//Listar un documento
 
-// async function crearPropiedad(nuevaPropiedad){
-//     const  client=new MongoClient(uri);
+async function crearPropiedad(nuevaPropiedad){
+    const  client=new MongoClient(uri);
 
-//     try {
+    try {
         
-//         await client.connect();
+        await client.connect();
 
-//         const result=await client.db('Publigrafit2').collection('Compras').findOne({supplier: nuevaPropiedad});
+        const result=await client.db('Publigrafit2').collection('Compras').findOne({supplier: nuevaPropiedad});
         
-//         if(result){
-//             console.log(result);
-//         }
+        if(result){
+            console.log(result);
+        }
 
-//     } catch (e) {
-//         console.error(e);
-//     }finally{
-//         await client.close()
-//     }
-// }
-// crearPropiedad("Exito")
+    } catch (e) {
+        console.error(e);
+    }finally{
+        await client.close()
+    }
+}
+crearPropiedad("Medellin")
 
 //Listar todos los documentos
 
@@ -48,7 +48,7 @@ const uri='mongodb+srv://valeria:admin@cluster0.wcriixv.mongodb.net/?retryWrites
 // }
 // crearPropiedad()
 
-//Listar los documentos con el limit
+// Listar los documentos con el limit
 // async function crearPropiedad(nuevaPropiedad){
 //     const  client=new MongoClient(uri);
 
