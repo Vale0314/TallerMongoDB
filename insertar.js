@@ -11,7 +11,7 @@ async function actualizarPropiedad(nombrePropiedad, campoActualizar){
         await client.connect();
 
         const result=await client.db('Publigrafit2').collection('Compras').
-        updateOne({supplier: nombrePropiedad}, {$set: {price: campoActualizar}}, {upsert: true})
+        updateMany({supplier: nombrePropiedad}, {$set: {price: campoActualizar}}, {upsert: true})
 
         console.log(`${result.matchedCount} propiedad{es} cumple con el criterio de busqueda`);
         console.log(`${result.modifiedCount} propiedad{es} fue{ron} actualizada{s}`);
