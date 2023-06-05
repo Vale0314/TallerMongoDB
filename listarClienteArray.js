@@ -12,7 +12,7 @@ async function crearPropiedad(){
         
         await client.connect();
 
-        const result=await client.db('Publigrafit2').collection('Compras').find({}).toArray();
+        const result=await client.db('Publigrafit2').collection('ClienteArray').find({}).toArray();
         
         if(result){
             console.log(result);
@@ -33,7 +33,7 @@ async function crearPropiedad(nuevaPropiedad){
         
         await client.connect();
 
-        const result=await client.db('Publigrafit2').collection('Compras').findOne({supplier: nuevaPropiedad});
+        const result=await client.db('Publigrafit2').collection('ClienteArray').findOne({name: nuevaPropiedad});
         
         if(result){
             console.log(result);
@@ -45,5 +45,5 @@ async function crearPropiedad(nuevaPropiedad){
         await client.close()
     }
 }
-crearPropiedad("Exito")
+crearPropiedad("Camilo")
 

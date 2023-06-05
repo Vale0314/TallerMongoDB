@@ -62,4 +62,41 @@ db.createCollection("Compras", {
          }
       }
    }
-} )
+})
+
+// db.Compras.aggregate([
+
+//    {
+//       $unwind:"$Productos"
+//    }
+// ])
+//PIPELINE - Organizadores
+// db.Compras.aggregate([
+
+
+//    {
+//       $match: {supplier:"Exito"}
+         
+//    },{
+//       $limit:2
+//    },
+//    {
+//       $sort: {
+//         amount: 1
+//       }
+//    }
+// ])
+db.Compras.aggregate([
+   {
+      $match:{price:{$gt:5}}
+   },
+   {
+      $group:{ _id:null, count:{$sum:1}}
+ },
+   {
+      $project: {
+        iva:false
+      }
+   }
+
+])

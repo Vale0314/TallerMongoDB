@@ -3,20 +3,19 @@ const { faker } = require('@faker-js/faker');
 
 const uri='mongodb+srv://valeria:admin@cluster0.wcriixv.mongodb.net/?retryWrites=true&w=majority'
 
-//Listar un documento
+async function eliminarPropiedad(nombrePropiedad){
 
-async function crearPropiedad(){
+
     const  client=new MongoClient(uri);
 
     try {
         
         await client.connect();
 
-        const result=await client.db('Publigrafit2').collection('Compras').find({}).toArray();
-        
-        if(result){
-            console.log(result);
-        }
+        const result=await client.db('Publigrafit2').collection('Clientes').deleteMany({supplier: nombrePropiedad})
+
+        console.log(`${result.deletedCount} propiedad{es} fue{ron} eliminada{s}`);
+
 
     } catch (e) {
         console.error(e);
@@ -24,20 +23,21 @@ async function crearPropiedad(){
         await client.close()
     }
 }
-crearPropiedad()
+eliminarPropiedad("Trantow LLC")
 
-async function crearPropiedad(nuevaPropiedad){
+async function eliminarPropiedad(filter, nombrePropiedad){
+
+
     const  client=new MongoClient(uri);
 
     try {
         
         await client.connect();
 
-        const result=await client.db('Publigrafit2').collection('Compras').findOne({supplier: nuevaPropiedad});
-        
-        if(result){
-            console.log(result);
-        }
+        const result=await client.db('Publigrafit2').collection('Clientes').deleteOne({name:filter},{supplier: nombrePropiedad})
+
+        console.log(`${result.deletedCount} propiedad{es} fue{ron} eliminada{s}`);
+
 
     } catch (e) {
         console.error(e);
@@ -45,5 +45,3 @@ async function crearPropiedad(nuevaPropiedad){
         await client.close()
     }
 }
-crearPropiedad("Exito")
-

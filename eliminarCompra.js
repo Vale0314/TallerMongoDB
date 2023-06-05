@@ -24,3 +24,24 @@ async function eliminarPropiedad(nombrePropiedad){
     }
 }
 eliminarPropiedad("Trantow LLC")
+
+async function eliminarPropiedad(filter, nombrePropiedad){
+
+
+    const  client=new MongoClient(uri);
+
+    try {
+        
+        await client.connect();
+
+        const result=await client.db('Publigrafit2').collection('Compra').deleteOne({total:filter},{supplier: nombrePropiedad})
+
+        console.log(`${result.deletedCount} propiedad{es} fue{ron} eliminada{s}`);
+
+
+    } catch (e) {
+        console.error(e);
+    }finally{
+        await client.close()
+    }
+}
