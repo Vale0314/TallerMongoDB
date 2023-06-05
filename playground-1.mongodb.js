@@ -55,17 +55,32 @@ use('Publigrafit2')
 //       }
 //    }
 // ])
+// db.Compras.aggregate([
+//    {
+//       $match:{price:{$gt:5}}
+//    },
+//    {
+//       $group:{ _id:null, count:{$sum:1}}
+//  },
+//    {
+//       $project: {
+//         iva:false
+//       }
+//    }
+
+// ])
+
 db.Compras.aggregate([
    {
-      $match:{price:{$gt:5}}
-   },
-   {
-      $group:{ _id:null, count:{$sum:1}}
- },
-   {
+      $lookup: {
+        from: 'ClienteArray',
+        localField: "'_id'",
+        foreignField: "'_id'",
+        as: "Comentarios"
+      }
+   },{
       $project: {
-        iva:false
+        "_id":true
       }
    }
-
 ])
