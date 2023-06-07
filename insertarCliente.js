@@ -19,88 +19,79 @@ async function crearPropiedad(nuevaPropiedad){
         await client.close()
     }
 }
-    for (let i=0; i<100; i++){
-    
+   
+ for(let i=0; i<100; i++)  {
 crearPropiedad([
     {
-        "DNI":faker.company.name(), //Sting
-        "name":faker.number.int({min:1,max:100}), //Int
-        "lastname":new Date(), //Date
-        "telephone":faker.number.int({min:1,max:100000}), //Int
+        "DNI":faker.string.numeric(), //Sting
+        "name":faker.person.firstName(), //Int
+        "lastname":faker.person.lastName(), //Date
+        "telephone":faker.phone.number(), //Int
         "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
-    },
-    {
-        "DNI":faker.company.name(), //Sting
-        "name":faker.number.int({min:1,max:100}), //Int
-        "lastname":new Date(), //Date
-        "telephone":faker.number.int({min:1,max:100000}), //Int
+    },  {
+        "DNI":faker.string.numeric(), //Sting
+        "name":faker.person.firstName(), //Int
+        "lastname":faker.person.lastName(), //Date
+        "telephone":faker.phone.number(), //Int
         "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
-    },
-    {
-        "DNI":faker.company.name(), //Sting
-        "name":faker.number.int({min:1,max:100}), //Int
-        "lastname":new Date(), //Date
-        "telephone":faker.number.int({min:1,max:100000}), //Int
+    },  {
+        "DNI":faker.string.numeric(), //Sting
+        "name":faker.person.firstName(), //Int
+        "lastname":faker.person.lastName(), //Date
+        "telephone":faker.phone.number(), //Int
         "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
-    },
-    {
-        "DNI":faker.company.name(), //Sting
-        "name":faker.number.int({min:1,max:100}), //Int
-        "lastname":new Date(), //Date
-        "telephone":faker.number.int({min:1,max:100000}), //Int
+    },  {
+        "DNI":faker.string.numeric(), //Sting
+        "name":faker.person.firstName(), //Int
+        "lastname":faker.person.lastName(), //Date
+        "telephone":faker.phone.number(), //Int
         "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
-    },
-    {
-        "DNI":faker.company.name(), //Sting
-        "name":faker.number.int({min:1,max:100}), //Int
-        "lastname":new Date(), //Date
-        "telephone":faker.number.int({min:1,max:100000}), //Int
+    },  {
+        "DNI":faker.string.numeric(), //Sting
+        "name":faker.person.firstName(), //Int
+        "lastname":faker.person.lastName(), //Date
+        "telephone":faker.phone.number(), //Int
         "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
-    },
-    {
-        "DNI":faker.company.name(), //Sting
-        "name":faker.number.int({min:1,max:100}), //Int
-        "lastname":new Date(), //Date
-        "telephone":faker.number.int({min:1,max:100000}), //Int
+    },  {
+        "DNI":faker.string.numeric(), //Sting
+        "name":faker.person.firstName(), //Int
+        "lastname":faker.person.lastName(), //Date
+        "telephone":faker.phone.number(), //Int
         "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
-    },
-    {
-        "DNI":faker.company.name(), //Sting
-        "name":faker.number.int({min:1,max:100}), //Int
-        "lastname":new Date(), //Date
-        "telephone":faker.number.int({min:1,max:100000}), //Int
+    },  {
+        "DNI":faker.string.numeric(), //Sting
+        "name":faker.person.firstName(), //Int
+        "lastname":faker.person.lastName(), //Date
+        "telephone":faker.phone.number(), //Int
         "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
-    },
-    {
-        "DNI":faker.company.name(), //Sting
-        "name":faker.number.int({min:1,max:100}), //Int
-        "lastname":new Date(), //Date
-        "telephone":faker.number.int({min:1,max:100000}), //Int
+    },  {
+        "DNI":faker.string.numeric(), //Sting
+        "name":faker.person.firstName(), //Int
+        "lastname":faker.person.lastName(), //Date
+        "telephone":faker.phone.number(), //Int
         "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
-    },
-    {
-        "DNI":faker.company.name(), //Sting
-        "name":faker.number.int({min:1,max:100}), //Int
-        "lastname":new Date(), //Date
-        "telephone":faker.number.int({min:1,max:100000}), //Int
+    },  {
+        "DNI":faker.string.numeric(), //Sting
+        "name":faker.person.firstName(), //Int
+        "lastname":faker.person.lastName(), //Date
+        "telephone":faker.phone.number(), //Int
         "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
-    },
-    {
-        "DNI":faker.company.name(), //Sting
-        "name":faker.number.int({min:1,max:100}), //Int
-        "lastname":new Date(), //Date
-        "telephone":faker.number.int({min:1,max:100000}), //Int
+    },  {
+        "DNI":faker.string.numeric(), //Sting
+        "name":faker.person.firstName(), //Int
+        "lastname":faker.person.lastName(), //Date
+        "telephone":faker.phone.number(), //Int
         "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
-    },
+    }
 ])
-} 
+ }

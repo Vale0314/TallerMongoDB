@@ -1,5 +1,5 @@
 use('Publigrafit2')
-// db.createCollection("Clientes", {
+// db.createCollection("Compras", {
 //    validator: {
 //       $jsonSchema: {
          
@@ -33,6 +33,46 @@ use('Publigrafit2')
 //       }
 //    }
 // } )
+
+db.createCollection('Clientes', {
+   validator: {
+      $jsonSchema: {
+         
+         required: [ "DNI", "name", "lastName", "telephone", "address", "email" ],
+         properties: {
+            DNI: {
+                bsonType: "string",
+                description: "'DNI' Este campo es requerido"
+            },
+            name: {
+                bsonType: "string",
+                description: "'name' Este campo es requerido"
+            },
+            lastName: {
+               bsonType: "string",
+               description: "'lastName' Este campo es requerido"
+            },
+            telephone: {
+                bsonType: "int",
+                description: "'telephone' Este campo es requerido"
+             },
+            address: {
+               bsonType: "string",
+               description: "'address' Este campo es requerido"
+            },
+            email: {
+               bsonType: "email",
+               description: "'email' Este campo es requerido"
+            }
+         }
+      }
+   }
+} )
+
+
+
+
+
 // db.Compras.aggregate([
 
 //    {
@@ -70,17 +110,17 @@ use('Publigrafit2')
 
 // ])
 
-db.Compras.aggregate([
-   {
-      $lookup: {
-        from: 'ClienteArray',
-        localField: "'_id'",
-        foreignField: "'_id'",
-        as: "Comentarios"
-      }
-   },{
-      $project: {
-        "_id":true
-      }
-   }
-])
+// db.Compras.aggregate([
+//    {
+//       $lookup: {
+//         from: 'ClienteArray',
+//         localField: "'_id'",
+//         foreignField: "'_id'",
+//         as: "Comentarios"
+//       }
+//    },{
+//       $project: {
+//         "_id":true
+//       }
+//    }
+// ])
