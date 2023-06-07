@@ -27,7 +27,7 @@ crearPropiedad([
         "name":faker.number.int({min:1,max:100}), //Int
         "lastname":new Date(), //Date
         "telephone":faker.number.int({min:1,max:100000}), //Int
-        "adress":faker.location.adress(), //Int
+        "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
     },
     {
@@ -35,7 +35,7 @@ crearPropiedad([
         "name":faker.number.int({min:1,max:100}), //Int
         "lastname":new Date(), //Date
         "telephone":faker.number.int({min:1,max:100000}), //Int
-        "adress":faker.location.adress(), //Int
+        "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
     },
     {
@@ -43,7 +43,7 @@ crearPropiedad([
         "name":faker.number.int({min:1,max:100}), //Int
         "lastname":new Date(), //Date
         "telephone":faker.number.int({min:1,max:100000}), //Int
-        "adress":faker.location.adress(), //Int
+        "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
     },
     {
@@ -51,7 +51,7 @@ crearPropiedad([
         "name":faker.number.int({min:1,max:100}), //Int
         "lastname":new Date(), //Date
         "telephone":faker.number.int({min:1,max:100000}), //Int
-        "adress":faker.location.adress(), //Int
+        "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
     },
     {
@@ -59,7 +59,7 @@ crearPropiedad([
         "name":faker.number.int({min:1,max:100}), //Int
         "lastname":new Date(), //Date
         "telephone":faker.number.int({min:1,max:100000}), //Int
-        "adress":faker.location.adress(), //Int
+        "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
     },
     {
@@ -67,7 +67,7 @@ crearPropiedad([
         "name":faker.number.int({min:1,max:100}), //Int
         "lastname":new Date(), //Date
         "telephone":faker.number.int({min:1,max:100000}), //Int
-        "adress":faker.location.adress(), //Int
+        "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
     },
     {
@@ -75,7 +75,7 @@ crearPropiedad([
         "name":faker.number.int({min:1,max:100}), //Int
         "lastname":new Date(), //Date
         "telephone":faker.number.int({min:1,max:100000}), //Int
-        "adress":faker.location.adress(), //Int
+        "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
     },
     {
@@ -83,7 +83,7 @@ crearPropiedad([
         "name":faker.number.int({min:1,max:100}), //Int
         "lastname":new Date(), //Date
         "telephone":faker.number.int({min:1,max:100000}), //Int
-        "adress":faker.location.adress(), //Int
+        "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
     },
     {
@@ -91,7 +91,7 @@ crearPropiedad([
         "name":faker.number.int({min:1,max:100}), //Int
         "lastname":new Date(), //Date
         "telephone":faker.number.int({min:1,max:100000}), //Int
-        "adress":faker.location.adress(), //Int
+        "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
     },
     {
@@ -99,7 +99,7 @@ crearPropiedad([
         "name":faker.number.int({min:1,max:100}), //Int
         "lastname":new Date(), //Date
         "telephone":faker.number.int({min:1,max:100000}), //Int
-        "adress":faker.location.adress(), //Int
+        "address":faker.location.city(), //Int
         "email":faker.internet.email() //Int
     },
 ])
